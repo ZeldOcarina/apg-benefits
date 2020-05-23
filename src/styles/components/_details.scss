@@ -1,0 +1,26 @@
+.details {
+  background-color: $details-background;
+
+  &__text {
+    display: flex;
+
+    &-column {
+      width: 80%;
+      padding: 0 5rem;
+      text-align: center;
+      transform: translateY(-10%);
+
+      &:not(:last-child) {
+        border-right: 1px solid #cfe6ec;
+      }
+    }
+  }
+
+  &__title {
+    color: $blue;
+    font-weight: 700;
+  }
+
+  &__description {
+  }
+}

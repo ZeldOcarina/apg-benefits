@@ -1,0 +1,37 @@
+.cards {
+  background-color: rgba(166, 221, 247, 0.73);
+  padding: 5rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40rem);
+    grid-gap: 5rem;
+    width: 80%;
+
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #338cba;
+    padding: 4rem;
+    text-align: center;
+    height: 35rem;
+    border-radius: 8px;
+
+    &__image {
+      height: 12rem;
+      width: auto;
+    }
+
+    &__title {
+      color: $green;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+  }
+}

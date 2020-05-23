@@ -1,0 +1,28 @@
+.testimonials {
+  width: 80%;
+  background-color: $details-background;
+  margin: 0 auto;
+  padding: 4rem;
+  text-align: center;
+
+  &__title {
+    font-weight: 700;
+    color: $blue;
+    text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 45rem);
+    grid-gap: 5rem;
+    justify-content: center;
+  }
+
+  .testimonial {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.8rem;
+
+    &__text {
+    }
+  }
+}
