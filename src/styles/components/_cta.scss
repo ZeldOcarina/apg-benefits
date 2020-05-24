@@ -5,12 +5,22 @@
   &__header {
     font-size: 3.2rem;
     font-weight: 700;
+
+    @include respond(phone-port) {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
   }
 
   &__text {
     width: 50rem;
     font-size: 1.8rem;
     margin: 0 auto 8rem auto;
+
+    @include respond(phone-port) {
+      width: 80%;
+    }
   }
 
   &__btn {
@@ -28,6 +38,10 @@
       transform: translateY(-2px);
       box-shadow: 7px 6px 15px -2px rgba(131, 131, 131, 0.75);
       cursor: pointer;
+    }
+
+    @include respond(phone-port) {
+      font-size: 2.5rem;
     }
   }
 }

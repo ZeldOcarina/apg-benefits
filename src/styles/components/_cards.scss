@@ -7,9 +7,24 @@
     grid-template-columns: repeat(auto-fill, 40rem);
     grid-gap: 5rem;
     width: 80%;
-
     margin: 0 auto;
     justify-content: center;
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(auto-fill, 38rem);
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: repeat(auto-fill, 33rem);
+      grid-gap: 3rem;
+      width: 90%;
+    }
+
+    @include respond(phone-port) {
+      grid-template-columns: repeat(auto-fill, 100%);
+      grid-gap: 3rem;
+      width: 90%;
+    }
   }
 
   .card {
@@ -22,6 +37,10 @@
     text-align: center;
     height: 35rem;
     border-radius: 8px;
+
+    @include respond(tab-port) {
+      height: 30rem;
+    }
 
     &__image {
       height: 12rem;

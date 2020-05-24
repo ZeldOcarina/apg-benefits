@@ -1,8 +1,20 @@
 .details {
   background-color: $details-background;
 
+  @include respond(laptop) {
+    padding-bottom: 10rem;
+  }
+
   &__text {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60rem);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+    @include respond(phone-port) {
+      grid-template-columns: repeat(auto-fit, 100%);
+    }
 
     &-column {
       width: 80%;
@@ -10,8 +22,21 @@
       text-align: center;
       transform: translateY(-10%);
 
+      @include respond(tab-land) {
+        padding: 3rem 0;
+      }
+
+      @include respond(tab-port) {
+        padding-bottom: 4.5rem;
+      }
+
       &:not(:last-child) {
         border-right: 1px solid #cfe6ec;
+
+        @include respond(tab-land) {
+          border-right: none;
+          border-bottom: 1px solid #cfe6ec;
+        }
       }
     }
   }

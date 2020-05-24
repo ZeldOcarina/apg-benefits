@@ -8,12 +8,43 @@
   transform: translateY(-50%);
   padding: 6rem 4rem 7rem 4rem;
 
+  @include respond(laptop) {
+    padding: 6rem 8rem 7rem 8rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 6rem 10rem 7rem 10rem;
+  }
+
+  @include respond(phone-land) {
+    padding: 2rem 3rem 4rem 3rem;
+    width: min-content;
+  }
+
+  @include respond(phone-port) {
+    padding: 3.5rem 0 4rem 0;
+    width: 97%;
+  }
+
+  @include respond(iphone-5) {
+    padding: 2rem 0 3rem 0;
+    width: 97%;
+  }
+
   &__title {
     margin-top: 0;
     font-size: 1.8rem;
     font-style: italic;
     color: grey;
     margin-bottom: 4rem;
+
+    @include respond(phone-land) {
+      margin-bottom: 2rem;
+    }
+    @include respond(phone-port) {
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+    }
   }
 
   &__logos {
@@ -23,8 +54,31 @@
 
   &__logo {
     width: 25rem;
+
+    @include respond(tab-land) {
+      width: 15rem;
+    }
+
+    @include respond(phone-land) {
+      width: 10rem;
+    }
+
+    @include respond(phone-port) {
+      width: 5rem;
+    }
+
+    @include respond(phone-port) {
+      width: 8rem;
+    }
+
     &:nth-child(2) {
       margin: 0 6rem;
+      @include respond(phone-land) {
+        margin: 0 4rem;
+      }
+      @include respond(phone-port) {
+        margin: 0 2rem;
+      }
     }
   }
 }
