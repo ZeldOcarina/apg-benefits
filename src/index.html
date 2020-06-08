@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>APG Benefits</title>
   </head>
   <body>
     <section class="hero">
@@ -150,7 +150,7 @@
         Contribute to the movement that is helping the world become a better and
         cleaner place for our children.
       </p>
-      <button class="cta__btn">ENROLL TODAY</button>
+      <a class="cta__btn" href="#form-section">LET'S HAVE A CHAT!</a>
     </section>
     <section class="testimonials">
       <h2 class="testimonials__title">What our members say:</h2>
@@ -185,5 +185,87 @@
         </div>
       </div>
     </section>
+    <section class="form" id="form-section">
+      <div class="form">
+        <form action="/f/1121-4492" class="form__form" method="POST">
+          <h3 class="form__cta">
+            YES! Let's have a chat about this energy deal!
+          </h3>
+          <div class="form__form-input-container">
+            <label for="first_name" class="form__label">Name</label>
+            <input
+              type="text"
+              class="form__text-input"
+              name="first_name"
+              id="first_name"
+              required
+            />
+          </div>
+          <div class="form__form-input-container">
+            <label for="last_name" class="form__label">Last Name</label>
+            <input
+              type="text"
+              class="form__text-input"
+              name="last_name"
+              id="last_name"
+              required
+            />
+          </div>
+          <div class="form__form-input-container">
+            <label for="email" class="form__label">Email</label>
+            <input
+              type="email"
+              class="form__text-input"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="form__form-input-container">
+            <label for="zip_code" class="form__label">ZIP Code</label>
+            <input
+              type="text"
+              class="form__text-input"
+              name="zip_code"
+              id="zip_code"
+              required
+            />
+          </div>
+          <div
+            class="form__form-input-container form__form-input-container--checkbox"
+          >
+            <label for="terms" class="form__label form__checkbox--label"
+              >I hereby agree to the
+              <a href="https://www.americanpowerandgas.com/terms-conditions/"
+                >terms and conditions</a
+              >
+              and I understand that by submitting this form I am authorizing
+              American Power and Gas to contact me with a phone call.</label
+            >
+            <input
+              type="checkbox"
+              class="form__text-input form__checkbox"
+              name="terms"
+              id="terms"
+              required
+            />
+          </div>
+          <div class="form__form-input-container">
+            <input type="submit" class="cta__btn" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      &copy;&nbsp;<span class="footer__date"></span>&nbsp;American Power &
+      Gas<span class="footer__divider">|</span>
+      <a href="https://www.americanpowerandgas.com/terms-conditions/"
+        >Terms and Conditions</a
+      >
+      <span class="footer__divider">|</span>
+      <a href="https://www.americanpowerandgas.com/privacy-policy/"
+        >Privacy Policy</a
+      >
+    </footer>
   </body>
 </html>

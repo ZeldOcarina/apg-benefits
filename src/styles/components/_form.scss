@@ -1,0 +1,110 @@
+.form {
+  margin: 0 auto;
+
+  &__cta {
+    color: $blue;
+    text-align: center;
+    font-weight: 700;
+
+    @include respond(phone-port) {
+      font-size: 2rem;
+      width: 80%;
+      margin: 2rem;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 1rem;
+    color: $blue;
+    font-weight: 700;
+  }
+
+  &__text-input {
+    padding: 1.5rem 1.5rem;
+    border: 1px solid #b8b8b8;
+    font-size: 2rem;
+    width: 94%;
+
+    @include respond(phone-port) {
+      width: 80%;
+    }
+  }
+
+  .cta__btn {
+    margin-top: 2rem;
+    width: 100%;
+
+    @include respond(phone-port) {
+      width: 90%;
+    }
+  }
+
+  &__form {
+    width: 30%;
+    margin: 5rem auto;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 6rem;
+    border-radius: 10px;
+
+    @include respond(tab-land) {
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
+      width: 75%;
+    }
+
+    @include respond(phone-land) {
+      width: 60%;
+    }
+
+    @include respond(phone-port) {
+      width: 100%;
+      border-radius: 0;
+      padding: 3rem 2rem;
+    }
+
+    &-input-container {
+      width: 100%;
+      padding: 1rem 0;
+
+      &--checkbox {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 100%;
+        align-items: center;
+
+        @include respond(phone-port) {
+          grid-template-columns: 20% 68%;
+        }
+      }
+    }
+  }
+
+  &__checkbox {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    justify-self: center;
+
+    &--label {
+      grid-column: 2 / 3;
+      margin: 0;
+      font-weight: normal;
+
+      a {
+        text-decoration: none;
+        font-weight: 700;
+
+        &:visited {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
